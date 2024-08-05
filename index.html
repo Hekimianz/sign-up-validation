@@ -24,52 +24,71 @@
   <body>
     <main>
       <section class="card">
-        <div class="card__img"></div>
-        <div class="card__content">
-          <h1 class="card__title">Stay updated!</h1>
-          <p class="card__text">
-            Join 60,000+ product managers receiving monthly updates on:
-          </p>
-          <ul class="card__list--cont">
-            <li class="card__list--item">
-              <img
-                src="./assets/images/icon-list.svg"
-                alt="checkmark"
-                class="card__list--icon"
+        <div class="defaultCard">
+          <div class="card__img"></div>
+          <div class="card__content">
+            <h1 class="card__title">Stay updated!</h1>
+            <p class="card__text">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
+            <ul class="card__list--cont">
+              <li class="card__list--item">
+                <img
+                  src="./assets/images/icon-list.svg"
+                  alt="checkmark"
+                  class="card__list--icon"
+                />
+                <span class="card__list--text"
+                  >Product discovery and building what matters
+                </span>
+              </li>
+              <li class="card__list--item">
+                <img
+                  src="./assets/images/icon-list.svg"
+                  alt=""
+                  class="card__list--icon"
+                />
+                <span class="card__list--text"
+                  >Measuring to ensure updates are a success
+                </span>
+              </li>
+              <li class="card__list--item">
+                <img
+                  src="./assets/images/icon-list.svg"
+                  alt=""
+                  class="card__list--icon"
+                />
+                <span class="card__list--text">And much more!</span>
+              </li>
+            </ul>
+            <form id="form" class="card__form" novalidate>
+              <label for="email" class="form__label">Email address</label>
+              <span class="form__invalidEmailText">Valid email required</span>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email@company.com"
               />
-              <span class="card__list--text"
-                >Product discovery and building what matters
-              </span>
-            </li>
-            <li class="card__list--item">
-              <img
-                src="./assets/images/icon-list.svg"
-                alt=""
-                class="card__list--icon"
-              />
-              <span class="card__list--text"
-                >Measuring to ensure updates are a success
-              </span>
-            </li>
-            <li class="card__list--item">
-              <img
-                src="./assets/images/icon-list.svg"
-                alt=""
-                class="card__list--icon"
-              />
-              <span class="card__list--text">And much more!</span>
-            </li>
-          </ul>
-          <form id="form" class="card__form" novalidate>
-            <label for="email" class="form__label">Email address</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="email@company.com"
+              <button>Subscribe to monthly newsletter</button>
+            </form>
+          </div>
+        </div>
+        <div class="successCard">
+          <div class="successCard__textCont">
+            <img
+              src="./assets/images/icon-success.svg"
+              alt="checkmark"
+              class="successCard__img"
             />
-            <button>Subscribe to monthly newsletter</button>
-          </form>
+            <h2 class="successCard__title">Thanks for subscribing!</h2>
+            <p class="successCard__text">
+              A confirmation email has been sent to
+              <span class="successCard__text--userMail"></span>. Please open it
+              and click the button inside to confirm your subscription.
+            </p>
+          </div>
+          <button>Dismiss message</button>
         </div>
       </section>
     </main>
