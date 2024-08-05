@@ -25,7 +25,19 @@
     <main>
       <section class="card">
         <div class="defaultCard">
-          <div class="card__img"></div>
+          <div class="card__img">
+            <picture>
+              <source
+                srcset="./assets/images/illustration-sign-up-desktop.svg"
+                media="(min-width: 1440px)"
+              />
+              <img
+                src="./assets/images/illustration-sign-up-mobile.svg"
+                alt="Responsive image"
+                class="card__img"
+              />
+            </picture>
+          </div>
           <div class="card__content">
             <h1 class="card__title">Stay updated!</h1>
             <p class="card__text">

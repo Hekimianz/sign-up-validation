@@ -32,7 +32,7 @@ const handleSubmit = (e) => {
 form.addEventListener("submit", handleSubmit);
 
 dismissButton.addEventListener("click", () => {
-  defaultCard.style.display = "block";
+  defaultCard.style.display = "flex";
   successCard.style.display = "none";
   form.reset();
 });

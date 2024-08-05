@@ -28,20 +28,22 @@ main {
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
+  width: 100%;
 }
 
 .defaultCard {
   padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
 }
 .card__img {
-  background: url(./assets/images/illustration-sign-up-mobile.svg);
-  height: 275px;
   border-bottom-left-radius: 1.6rem;
   border-bottom-right-radius: 1.6rem;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin-bottom: 4rem;
+  width: 100%;
 }
 
 .card__content {
@@ -121,6 +123,7 @@ button {
   line-height: 150%;
   font-weight: bold;
   height: 5.6rem;
+  cursor: pointer;
 }
 
 .successCard {
@@ -139,4 +142,78 @@ button {
 
 .successCard__text--userMail {
   font-weight: bold;
+}
+
+@media screen and (min-width: 561px) {
+  .card {
+    min-height: 100%;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .defaultCard {
+    min-height: 641px;
+    width: 90%;
+    max-width: 700px;
+    background-color: #fff;
+    border-radius: 36px;
+    padding: 2.4rem;
+  }
+
+  main {
+    padding: 20px 0;
+  }
+
+  .card__img {
+    border-radius: 1.6rem;
+  }
+
+  .successCard {
+    max-width: 504px;
+    max-height: 520px;
+    min-height: 20px;
+    gap: 4rem;
+    padding: 4rem 6.4rem;
+    background-color: #fff;
+    border-radius: 36px;
+  }
+  button:hover {
+    background: linear-gradient(182deg, #ff6a3a 0%, #ff527b 100%);
+    box-shadow: 1px 16px 32px 0px rgba(255, 97, 85, 0.5);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .defaultCard {
+    min-height: 641px;
+    max-width: 928px;
+    border-radius: 36px;
+    flex-direction: row;
+    padding: 0;
+    padding: 2.4rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 6.4rem;
+    gap: 64px;
+  }
+
+  .card__img {
+    height: 593px;
+    margin: 0;
+    width: 400px;
+    order: 2;
+    border-top-left-radius: 1.6rem;
+    border-top-right-radius: 1.6rem;
+  }
+
+  .card__content {
+    height: 446px;
+    width: 376px;
+    padding: 0;
+  }
+
+  .card__title,
+  .successCard__title {
+    font-size: 5.6rem;
+  }
 }
